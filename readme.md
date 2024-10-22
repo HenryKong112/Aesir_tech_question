@@ -45,4 +45,5 @@ python q4.py
 *Use player_id 104 as an example
 
 Result:
+
 <img src='image\q4.png'>
