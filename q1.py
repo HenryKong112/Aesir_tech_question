@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 """
 Question 1: Data Manipulation (30 points)
-1. Load the CSV file '.csv' containing the columns: 
+1. Load the CSV file 'gamdata.csv' containing the columns: 
    - game_id
    - player_id
    - score
