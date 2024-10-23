@@ -13,7 +13,7 @@ cd Aesir_tech_question
 Python Version: Python 3.12.4
 
 ```
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 
 # Answer for question 1 to 4
