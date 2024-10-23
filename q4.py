@@ -12,7 +12,7 @@ returns the player's highest score and the level at which it was achieved.
 print()
 print('--Q4--')
 
-def HIGHEST_SCORE_LEVEL(player_id):
+def HIGHEST_SCORE_LEVEL(player_id:int):
     # Filter records for the specified player_id
     player_record = q1.df[q1.df['player_id'] == player_id]
     
@@ -31,4 +31,5 @@ def HIGHEST_SCORE_LEVEL(player_id):
         print(f"Cannot find player_id {player_id}.")
 
 # Example usage
+
 HIGHEST_SCORE_LEVEL(104)

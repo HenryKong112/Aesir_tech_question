@@ -20,10 +20,29 @@ Question 1: Data Manipulation (30 points)
 """
 print("--Q1--")
 # Load the csv file into a DataFrame 
-df = pd.read_csv('gamdata.csv')
+df = pd.read_csv('gamdata.csv',sep='|',usecols=[' game_id ',' player_id ',' score ',' level ',' timestamp '])
+
+# Read from row 1 as row 0 is "----"
+df = df.iloc[1:]
 
 # Clean the data by removing any rows with missing values.
 df = df.dropna()
+
+# Clean the column names by removing leading and trailing spaces
+df.columns = df.columns.str.strip()
+
+# Clean the DataFrame values by removing leading and trailing spaces
+df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+
+# Check data types
+print(df.info())
+
+# change data type
+df[['game_id','player_id','score','level']] = df[['game_id','player_id','score','level']].astype(int)
+df['timestamp'] = df['timestamp'].astype('datetime64[ns]')
+
+# Check data types again
+print(df.info())
 
 # Define cutoff points and labels for score categories
 cutoff = [0, 50, 80, np.inf]
