@@ -23,12 +23,6 @@ pip install -r requirement.txt
 python q1.py
 ```
 
-
-
-Group the data by 'level' and compute the average score for each level.
-
-
-
 Explanation of the Code:
 1. Data Loading: The code loads data from gamdata.csv, specifying the relevant columns.
 
