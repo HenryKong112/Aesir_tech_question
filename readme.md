@@ -1,5 +1,22 @@
-# Answer for question 1 to 4
+# Installation
 
+1. Clone the repository:
+```
+git clone https://github.com/HenryKong112/Aesir_tech_question.git
+```
+```
+cd Aesir_tech_question
+```
+
+2. Install required packages:
+
+Python Version: Python 3.12.4
+
+```
+pip install -r requirements.txt
+```
+
+# Answer for question 1 to 4
 ## Question 1
 
 ```python
